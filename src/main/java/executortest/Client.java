@@ -31,9 +31,8 @@ public class Client {
 				});
 
 		while (true) {
-			int counter = ThreadLocalRandom.current().nextInt(5, 10 + 1);
 
-			for (int i = 0; i < counter; i++) {
+			for (int i = 0; i < 10; i++) {
 				executorService.execute(new Runnable() {
 
 					public void run() {
